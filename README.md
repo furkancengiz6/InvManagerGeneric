@@ -41,17 +41,15 @@ Bu proje, **generic yapıları** daha iyi anlayabilmek ve uygulamalı olarak kul
 
    inventoryService.Add(product);
 
+2. **Ürünleri Listeleme:**
 
- 
- ## Ürünleri Listeleme
+   Tüm ürünleri listelemek için:
 
-Tüm ürünleri listelemek için:
+   ```csharp
+   var allProducts = productRepository.GetAll();
 
-```csharp
-var allProducts = productRepository.GetAll();
-
-product.Name = "Updated Product A";
-inventoryService.Update(product);
+   product.Name = "Updated Product A";
+   inventoryService.Update(product);
 
 
 inventoryService.Remove(product.Id);
