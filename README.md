@@ -50,12 +50,4 @@ Bu proje, **generic yapıları** daha iyi anlayabilmek ve uygulamalı olarak kul
 
    product.Name = "Updated Product A";
    inventoryService.Update(product);
-
-
-inventoryService.Remove(product.Id);
-
-
-
-
-
-
+   inventoryService.Remove(product.Id);
